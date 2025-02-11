@@ -67,6 +67,10 @@ h3 {
     color: var(--color-turquoise) !important;
 }
 
+.navbar-toggler {
+    background-color: var(--color-white) !important;
+}
+
 /* Cards */
 .card {
     transition: transform 0.3s ease;
