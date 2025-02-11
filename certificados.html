@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Certificados: Nacimiento, Matrimonio y Defunción - Actas Info</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .certificate-section {
+            background-color: var(--color-white);
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        .certificate-section:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        .requirements-list {
+            background-color: rgba(23, 162, 184, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .requirements-list h4 {
+            color: var(--color-sapphire);
+            margin-bottom: 15px;
+        }
+
+        .requirements-list ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .requirements-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .requirements-list li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--color-turquoise);
+        }
+
+        .certificate-image {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .mb-0 {
+            color: var(--color-white);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Actas Info</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="certificados.html">Certificados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plazos.html">Plazos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="errores.html">Errores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1>Actas de Nacimiento, Matrimonio y Defunción: ¿Cuál es la diferencia?</h1>
+                    <p class="lead">Guía completa sobre los diferentes tipos de actas y certificados civiles en México</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Birth Certificate Section -->
+        <section id="nacimiento" class="certificate-section">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/birth-certificate.jpg" alt="Acta de Nacimiento" class="img-fluid certificate-image">
+                </div>
+                <div class="col-md-6">
+                    <h2><i class="fas fa-baby text-primary me-2"></i>Acta de Nacimiento</h2>
+                    <p class="lead">El acta de nacimiento es el documento oficial que certifica el nacimiento de una persona en México.</p>
+                    
+                    <div class="requirements-list">
+                        <h4><i class="fas fa-list-check me-2"></i>Documentos necesarios:</h4>
+                        <ul>
+                            <li>Identificación oficial vigente</li>
+                            <li>CURP (si está disponible)</li>
+                            <li>Comprobante de pago de derechos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="plazos.html#nacimiento" class="btn btn-primary">
+                            <i class="fas fa-clock me-2"></i>Ver plazos de entrega
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marriage Certificate Section -->
+        <section id="matrimonio" class="certificate-section">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <img src="images/marriage-certificate.jpg" alt="Acta de Matrimonio" class="img-fluid certificate-image">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h2><i class="fas fa-rings-wedding text-primary me-2"></i>Acta de Matrimonio</h2>
+                    <p class="lead">El acta de matrimonio es el documento que certifica legalmente la unión matrimonial entre dos personas.</p>
+                    
+                    <div class="requirements-list">
+                        <h4><i class="fas fa-list-check me-2"></i>Documentos necesarios:</h4>
+                        <ul>
+                            <li>Identificación oficial de ambos cónyuges</li>
+                            <li>CURP de ambos cónyuges</li>
+                            <li>Comprobante de pago de derechos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="plazos.html#matrimonio" class="btn btn-primary">
+                            <i class="fas fa-clock me-2"></i>Ver plazos de entrega
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Death Certificate Section -->
+        <section id="defuncion" class="certificate-section">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/document-process.jpg" alt="Acta de Defunción" class="img-fluid certificate-image">
+                </div>
+                <div class="col-md-6">
+                    <h2><i class="fas fa-file-certificate text-primary me-2"></i>Acta de Defunción</h2>
+                    <p class="lead">El acta de defunción es el documento oficial que certifica el fallecimiento de una persona.</p>
+                    
+                    <div class="requirements-list">
+                        <h4><i class="fas fa-list-check me-2"></i>Documentos necesarios:</h4>
+                        <ul>
+                            <li>Certificado médico de defunción</li>
+                            <li>Identificación oficial del solicitante</li>
+                            <li>Comprobante de pago de derechos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="plazos.html#defuncion" class="btn btn-primary">
+                            <i class="fas fa-clock me-2"></i>Ver plazos de entrega
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Información Adicional -->
+    <section class="content-section mb-5">
+        <h2 class="text-center mb-4">Información Importante</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0"><i class="fas fa-globe me-2"></i>Uso Internacional</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4>Requisitos para el extranjero:</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Apostilla de La Haya</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Traducción certificada</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Vigencia reciente (3-6 meses)</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Legalización consular</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header bg-warning">
+                        <h3 class="mb-0"><i class="fas fa-shield-alt me-2"></i>Medidas de Seguridad</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4>Elementos de autenticidad:</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Código QR verificable</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Papel seguridad</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Firma electrónica</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Folio único</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="mb-0"><i class="fas fa-clock me-2"></i>Vigencia</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4>Periodos de validez:</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Nacional: Sin caducidad</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Internacional: 6 meses</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Apostilla: 1 año</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Traducción: 3 meses</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Obtención -->
+    <section class="content-section mb-5">
+        <h2 class="text-center mb-4">Proceso de Obtención</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="timeline">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4><i class="fas fa-1 me-2"></i>Solicitud en Línea o Presencial</h4>
+                            <p>Puede realizar la solicitud a través del portal web del Registro Civil o acudir personalmente a una oficina.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4><i class="fas fa-2 me-2"></i>Pago de Derechos</h4>
+                            <p>Realice el pago correspondiente según el tipo de certificado y la modalidad de entrega.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4><i class="fas fa-3 me-2"></i>Verificación de Datos</h4>
+                            <p>El Registro Civil verificará la información y procesará su solicitud.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4><i class="fas fa-4 me-2"></i>Emisión y Entrega</h4>
+                            <p>Recibirá su certificado según el método seleccionado (digital o físico).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section mb-5">
+        <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        ¿Cuánto tiempo tarda en expedirse un certificado?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        El tiempo de expedición varía según el tipo de certificado y la oficina del Registro Civil. En general, los certificados digitales pueden obtenerse en el mismo día, mientras que las copias certificadas físicas pueden demorar de 3 a 5 días hábiles.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        ¿Qué hacer si hay errores en el certificado?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Si encuentra errores en su certificado, debe iniciar un procedimiento de rectificación administrativa ante el Registro Civil. Consulte nuestra sección de <a href="errores.html">Corrección de Errores</a> para más información.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        ¿Los certificados digitales tienen la misma validez?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sí, los certificados digitales tienen la misma validez legal que los físicos, siempre que cuenten con todos los elementos de seguridad requeridos (código QR, firma electrónica, etc.).
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        ¿Puedo solicitar certificados de otros estados?
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sí, gracias al sistema nacional de registro civil, puede solicitar certificados de cualquier estado de México desde su ubicación actual.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                        ¿Necesito cita previa para solicitar un certificado?
+                    </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Para trámites presenciales, algunas oficinas requieren cita previa. Recomendamos verificar los requisitos específicos de su oficina local o utilizar el sistema en línea.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Costos y Tiempos -->
+    <section class="content-section mb-5">
+        <h2 class="text-center mb-4">Costos y Tiempos de Entrega</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Tipo de Certificado</th>
+                        <th>Costo Aproximado</th>
+                        <th>Tiempo Digital</th>
+                        <th>Tiempo Físico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Acta de Nacimiento</td>
+                        <td>$98 - $150 MXN</td>
+                        <td>Inmediato</td>
+                        <td>3-5 días</td>
+                    </tr>
+                    <tr>
+                        <td>Acta de Matrimonio</td>
+                        <td>$98 - $150 MXN</td>
+                        <td>Inmediato</td>
+                        <td>3-5 días</td>
+                    </tr>
+                    <tr>
+                        <td>Acta de Defunción</td>
+                        <td>$98 - $150 MXN</td>
+                        <td>Inmediato</td>
+                        <td>3-5 días</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="alert alert-info mt-3">
+            <i class="fas fa-info-circle me-2"></i>
+            <strong>Nota:</strong> Los costos pueden variar según el estado y el tipo de servicio solicitado.
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Actas Info</h5>
+                    <p>Tu guía confiable para documentos oficiales en México.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html"><i class="fas fa-home me-2"></i>Inicio</a></li>
+                        <li><a href="plazos.html"><i class="fas fa-clock me-2"></i>Plazos de Entrega</a></li>
+                        <li><a href="errores.html"><i class="fas fa-exclamation-triangle me-2"></i>Corrección de Errores</a></li>
+                        <li><a href="contacto.html"><i class="fas fa-envelope me-2"></i>Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="privacy.html"><i class="fas fa-shield-alt me-2"></i>Política de Privacidad</a></li>
+                        <li><a href="terms.html"><i class="fas fa-gavel me-2"></i>Términos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

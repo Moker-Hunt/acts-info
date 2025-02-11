@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrección de Errores en Documentos - Actas Info</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .error-section {
+            background-color: var(--color-white);
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        .error-card {
+            background-color: rgba(23, 162, 184, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .error-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .error-type {
+            color: var(--color-sapphire);
+            border-left: 4px solid var(--color-sapphire);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .correction-steps {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .correction-steps li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .correction-steps li:before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--color-turquoise);
+        }
+
+        .required-docs {
+            background-color: rgba(0, 87, 163, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .required-docs h4 {
+            color: var(--color-sapphire);
+            margin-bottom: 15px;
+        }
+
+        .required-docs ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .required-docs li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .required-docs li:before {
+            content: "\f0c8";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--color-turquoise);
+        }
+
+        .mb-0 {
+            color: var(--color-white);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Actas Info</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certificados.html">Certificados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plazos.html">Plazos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="errores.html">Errores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1>¿Qué hacer si hay errores en los datos del documento?</h1>
+                    <p class="lead">Guía completa para corregir errores en documentos oficiales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Tipos de Errores Comunes -->
+        <section class="content-section mb-5">
+            <h2 class="text-center mb-4">Errores Más Comunes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/document-review.jpg" class="card-img-top" alt="Errores Ortográficos" style="height: 200px; object-fit: cover;">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="h5 mb-0"><i class="fas fa-keyboard me-2"></i>Errores Ortográficos</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Nombres mal escritos</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Apellidos incorrectos</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Errores de acentuación</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/document-processing.jpg" class="card-img-top" alt="Errores en Fechas" style="height: 200px; object-fit: cover;">
+                        <div class="card-header bg-success text-white">
+                            <h3 class="h5 mb-0"><i class="fas fa-calendar-alt me-2"></i>Errores en Fechas</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Fecha de nacimiento</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Fecha de registro</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Fechas de eventos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/legal-advice.jpg" class="card-img-top" alt="Errores de Ubicación" style="height: 200px; object-fit: cover;">
+                        <div class="card-header bg-info text-white">
+                            <h3 class="h5 mb-0"><i class="fas fa-map-marker-alt me-2"></i>Errores de Ubicación</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Dirección incorrecta</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Municipio erróneo</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Estado equivocado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proceso de Corrección -->
+        <section class="proceso-correccion">
+            <div class="container">
+                <h2>Proceso de Corrección</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="process-step">
+                            <h3><span>1</span>Identificar el Error</h3>
+                            <p>Revise cuidadosamente el documento y marque todos los errores encontrados.</p>
+                        </div>
+                        <div class="process-step">
+                            <h3><span>2</span>Reunir Documentación</h3>
+                            <p>Prepare todos los documentos de respaldo necesarios para demostrar el error.</p>
+                        </div>
+                        <div class="process-step">
+                            <h3><span>3</span>Solicitar Corrección</h3>
+                            <p>Presente la solicitud en la oficina del Registro Civil correspondiente.</p>
+                        </div>
+                        <div class="process-step">
+                            <h3><span>4</span>Seguimiento</h3>
+                            <p>Dar seguimiento al proceso hasta obtener el documento corregido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentos Necesarios -->
+        <section class="content-section mb-5">
+            <h2 class="text-center mb-4">Documentos Necesarios</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="mb-0"><i class="fas fa-file-alt me-2"></i>Documentos Básicos</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="fas fa-id-card text-primary me-2"></i>
+                                    Identificación oficial vigente
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-file-alt text-primary me-2"></i>
+                                    Documento a corregir
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-file-signature text-primary me-2"></i>
+                                    Solicitud de corrección
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-success text-white">
+                            <h3 class="mb-0"><i class="fas fa-file-medical me-2"></i>Documentos de Respaldo</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="fas fa-file-medical text-success me-2"></i>
+                                    Documentos que prueben el error
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-file-invoice text-success me-2"></i>
+                                    Comprobante de pago
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-file-contract text-success me-2"></i>
+                                    Documentos adicionales según el caso
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Costos y Tiempos -->
+        <section class="content-section mb-5">
+            <h2 class="text-center mb-4">Costos y Tiempos de Corrección</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>Tipo de Error</th>
+                                            <th>Costo Aproximado</th>
+                                            <th>Tiempo Estimado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Error Ortográfico Simple</td>
+                                            <td>$500 - $1,000 MXN</td>
+                                            <td>5-10 días hábiles</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Error en Fecha</td>
+                                            <td>$800 - $1,500 MXN</td>
+                                            <td>7-15 días hábiles</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Error de Datos Complejos</td>
+                                            <td>$1,000 - $2,000 MXN</td>
+                                            <td>10-20 días hábiles</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="alert alert-info mt-3">
+                                <i class="fas fa-info-circle me-2"></i>
+                                <strong>Nota:</strong> Los costos y tiempos pueden variar según el estado y la complejidad del caso.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes -->
+        <section class="content-section mb-5">
+            <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    ¿Cuánto tiempo tarda la corrección de un error?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    El tiempo de corrección varía según el tipo de error y la oficina del Registro Civil. En general, puede tomar entre 5 y 20 días hábiles.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    ¿Necesito un abogado para corregir un error?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No siempre es necesario un abogado. Para errores simples, puede realizar el trámite personalmente. Sin embargo, para casos complejos, se recomienda asesoría legal.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    ¿Qué pasa si no corrijo el error?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Los errores en documentos oficiales pueden causar problemas en trámites futuros, como pasaporte, visa o registro escolar. Es importante corregirlos lo antes posible.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consejos y Recomendaciones -->
+        <section class="content-section mb-5">
+            <h2 class="text-center mb-4">Consejos y Recomendaciones</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="alert alert-warning mb-4">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                <strong>Importante:</strong> Revise cuidadosamente todos sus documentos al recibirlos.
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    Guarde copias de todos los documentos presentados
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    Tome fotografías de los documentos originales
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    Mantenga un registro de todas las comunicaciones
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    Solicite acuse de recibo de todos los trámites
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Actas Info</h5>
+                    <p>Tu guía confiable para documentos oficiales en México.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html"><i class="fas fa-home me-2"></i>Inicio</a></li>
+                        <li><a href="certificados.html"><i class="fas fa-file-alt me-2"></i>Certificados</a></li>
+                        <li><a href="plazos.html"><i class="fas fa-clock me-2"></i>Plazos de Entrega</a></li>
+                        <li><a href="contacto.html"><i class="fas fa-envelope me-2"></i>Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="privacy.html"><i class="fas fa-shield-alt me-2"></i>Política de Privacidad</a></li>
+                        <li><a href="terms.html"><i class="fas fa-gavel me-2"></i>Términos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
