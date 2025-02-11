@@ -19,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('cookieConsent', 'true');
         document.getElementById('cookieConsent').style.display = 'none';
         overlay.style.display = 'none';
-        
-        // Re-enable scrolling
         document.body.style.overflow = 'auto';
     });
 });
